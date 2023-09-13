@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyPassword</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <nav>
+        <div class="logo">MyPasswords</div>
+        <div class="menu-icon">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <ul class="navlinks">
+            <li>Home</li>
+            <li>About</li>
+            <li>Services</li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h1>myPassword Manager</h1>
+        <p>We're delighted to have you here, and we're here to help you take control of your online security. In today's
+            digital world, keeping your passwords safe and organized is more crucial than ever. That's where we come in.
+        </p>
+        <h2>Add Passwords</h2>
+        <form action="/submit" method="post">
+            <label for="username">UserName :</label>
+            <input type="text" name="username" id="username" required>
+            <label for="Password">Password : </label>
+            <input type="password" name="password" id="password" required>
+            <br><br>
+            <label for="website">Website&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; :</label>
+            <input type="text" name="website" id="website">
+            <br><br>
+            <button id="btn">Submit</button>
+        </form>
+        <h2>Your Passwords</h2>
+        <table>
+            <tr>
+                <th>website</th>
+                <th>username</th>
+                <th>password</th>
+                <th>Delete</th>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+        <h4 id="copy">(Copied!!)</h4>
+    </div>
+<script src="script.js"></script>
+</body>
+
+</html>
